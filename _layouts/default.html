@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planets of the Universe</title>
+    <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
 </head>
 <body>
     
     <header>
         <h1>Planets of the Universe</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="{{site.baseurl}}/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="{{site.baseurl}}/news.html">News</a>
-                </li>
-            </ul>
-        </nav> 
+        {% include nav.html navclass="nav-top" %}
     </header>
 {{content}}
+<footer>
+    {% include nav.html navclass="nav-bottom" %}
+    <p>2021 Planets of the Universe</p>
+</footer>
 
 </body>
 </html>
